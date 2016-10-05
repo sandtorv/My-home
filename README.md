@@ -15,4 +15,7 @@ Includes a OLED display (SSD1306) for displaying temperature, humidity and barom
 ![alt tag](https://github.com/sandtorv/My-home/blob/master/Images/Overview.png "How it looks")
 
 ##Setup##
-1. 
+1. [Setup your Particle Photon](https://docs.particle.io/guide/getting-started/intro/)
+2. Upload the My-home-firmware.cpp in /Firmware to the Particle Photon
+3. Open the config.js in /Website/js/ and add your Access Token and Device ID from the Particle Website.
+4. Open the index.html in /Website
