@@ -17,5 +17,6 @@ Includes a OLED display (SSD1306) for displaying temperature, humidity and barom
 ##Setup##
 1. [Setup your Particle Photon](https://docs.particle.io/guide/getting-started/intro/)
 2. Upload the My-home-firmware.cpp in /Firmware to the Particle Photon
-3. Open the config.js in /Website/js/ and add your Access Token and Device ID from the Particle Website.
-4. Open the index.html in /Website
+3. Connect both the display and the BME280 sensor to the I2C on the Particle Photon [like this](https://docs.particle.io/reference/firmware/photon/#wire-i2c-)
+4. Open the config.js in /Website/js/ and add your Access Token and Device ID from the Particle Website.
+5. Open the index.html in /Website and view the magic ;-)
