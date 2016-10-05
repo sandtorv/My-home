@@ -1,6 +1,6 @@
 var particle = new Particle();
-var token = '99dfd45c8136272205ff92db2bac3365915bdc59';
-var deviceID = '28003d000647343232363230';
+var token = '99dfd45c8136272205ff92db2bac3365915bdc59'; // Replace with your credentials
+var deviceID = '28003d000647343232363230'; // Replace with your credentials
 var lastUpdated;
 
 var months = ["January", "February", "March","April", "May", "June", "July","August", "September", "October","November", "December"];
