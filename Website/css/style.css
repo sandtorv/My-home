@@ -30,3 +30,41 @@ h2{
 	margin: 0;
 	margin-right: 5px;
 }
+
+.progressBar{
+	width: 100%;
+	max-width: 640px;
+	border: 1px solid #ddd;
+	height: 30px;
+	margin: 10px auto;
+	position: relative;
+}
+
+.progress{
+	position: absolute;
+	width: 1%;
+	height: 100%;
+	background-color: #ddd;
+}
+
+.progressIcon{
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	padding-top: 6px;
+	z-index: 100;
+	color: #000;
+
+}
+
+.rain{
+	left: 20%;
+}
+
+.fair{
+	left: 50%;
+}
+
+.sun{
+	right: 20%;
+}

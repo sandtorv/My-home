@@ -45,8 +45,16 @@ function getObject(){
 
 function updateView(obj){
   $('#temp').text(obj.temp);
-  $('#baro').text(obj.baro);
   $('#humid').text(obj.humid);
+  $('#baro').text(obj.baro);
+  updateProgress(obj.baro);
+}
+
+function updateProgress(progress){
+  console.log("Progress " + progress);
+  var percent = progress-960;
+  console.log("Percent " + percent);
+  $('.progress').width(percent + '%');
 }
 
 particle.getEventStream({ deviceId: deviceID, name: 'object', auth: token }).then(function(stream) {

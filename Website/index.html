@@ -5,14 +5,23 @@
     <meta charset="utf-8" /> 
     <meta name="author" content="Sebastian Sandtorv">
 		<script type="text/javascript" src="http://cdn.jsdelivr.net/particle-api-js/5/particle.min.js"></script>
-		<script   src="https://code.jquery.com/jquery-3.1.0.slim.min.js"   integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8="   crossorigin="anonymous"></script>
+		<script  src="https://code.jquery.com/jquery-3.1.0.slim.min.js"   integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8="   crossorigin="anonymous"></script>
+		<link rel="shortcut icon" type="image/ico" href="/img/favicon.ico"/>
 		<script type="text/javascript" src="js/config.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
+		<link rel="stylesheet" href="css/weather-icons.min.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<h1><span id="temp">loading...</span>°C</h1>
-		<h2><span id="humid">loading...</span> % <span id="baro">loading...</span> hPa</h2>
-		<h3 class="top-right-corner"><span id="time">loading...</span></h3>
-		<h4><span id="clock">loading...</span></h4>
+		<h1><span id="temp"></span>°C</h1>
+		<h2><span id="humid"></span> %</h2>
+		<h2><span id="baro"></span> hPa</h2>
+		<div class="progressBar">
+			<div class="progress"></div>
+			<i class="progressIcon rain wi wi-rain"></i>
+			<i class="progressIcon fair wi wi-day-cloudy"></i>
+			<i class="progressIcon sun wi wi-day-sunny"></i>
+		</div>
+		<h3 class="top-right-corner"><span id="time"></span></h3>
+		<h4><span id="clock"></span></h4>
 	</body>
