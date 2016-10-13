@@ -12,9 +12,7 @@ $(function() {
 
   setInterval(function(){
     if(lastUpdated != undefined){
-      $('#time').text("Last updated: " + timeSince(lastUpdated));
-      var d = new Date();
-      $('#clock').text(twoDecimals(d.getHours()) +':'+ twoDecimals(d.getMinutes()) +':'+twoDecimals(d.getSeconds()));
+      $('#time').text("Updated: " + timeSince(lastUpdated) + " ago");
     }
   }, 1000);
 
@@ -44,9 +42,9 @@ function getObject(){
 }
 
 function updateView(obj){
-  $('#temp').text(obj.temp);
-  $('#humid').text(obj.humid);
-  $('#baro').text(obj.baro);
+  $('#temp').text(obj.temp + '°C');
+  $('#humid').text(obj.humid + '%');
+  $('#baro').text(obj.baro + ' hPa');
   updateProgress(obj.baro);
 }
 
@@ -89,8 +87,7 @@ function timeSince(date) {
   if (interval >= 1) {
     return interval + " minute" + isMulti(interval);
   }
-  var interval = Math.floor(seconds);
-  return interval + " second" + isMulti(interval);
+  return "<1 minute";
 }
 
 function isMulti(input){
